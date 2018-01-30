@@ -1,8 +1,11 @@
 {
   "name": "my-description-package",
-  "version": "1.0.0"
+  "version": "1.0.0",
   "scripts": {
     "start": "node server.js"
   },
-  "main": "server.js"
+  "main": "server.js",
+  "dependencies": {
+    "http": "0.0.0"
+  }
 }
