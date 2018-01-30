@@ -1,11 +1,19 @@
 {
-  "name": "my-description-package",
-  "version": "1.0.0",
+  "name": "demo",
+  "version": "0.0.1",
   "scripts": {
     "start": "node server.js"
   },
   "main": "server.js",
   "dependencies": {
     "http": "0.0.0"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gdelegue/demo"
   }
 }
