@@ -25,8 +25,7 @@ app.get('/temperature/:value', function(req, res) {
    console.log(req.params.value)
    // => Matt
 
-   res.send('{"id": 1,"name":"Matt",
-     "band":"BBQ Brawlers"}');
+   res.send('{"id": 1,"name":"gerard", "band":"BBQ Brawlers"}');
 });
 
 app.listen(server_port, server_ip_address);
