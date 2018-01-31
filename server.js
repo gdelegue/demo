@@ -13,7 +13,7 @@ app.get('/temperature/:value', function(req, res) {
    t_celsius = req.params.value;
 
    //  Celsius to Fahrenheit conversion
-   // T(F) = T(C) * 9 / 5.0 + 32
+   // T(F) = T(C) * 9 / 5.0 + 32  ;
 
    // t_fahrenheit = .... TO BE COMPLETED
   
