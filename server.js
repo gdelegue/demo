@@ -21,11 +21,17 @@ app.get('/', function(req, res) {
 
 app.get('/temperature/:value', function(req, res) {
 
-   // Get /temperature/10.3
    console.log(req.params.value)
-   // => Matt
 
-   res.send('{"id": 1,"name":"gerard", "band":"BBQ Brawlers"}');
+   t_celsius = req.params.value;
+
+   //  Celsius to Fahrenheit conversion
+   // T(F) = T(C) * 9 / 5.0 + 32
+  
+   t_fahrenheit  = t_celsius * 9 /5.0  + 32;
+
+   //
+   res.send('{"fahrenheit": t_fahrenheit}');
 });
 
 app.listen(server_port, server_ip_address);
