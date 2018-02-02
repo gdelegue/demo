@@ -19,7 +19,7 @@ app.get('/temperature/:value', function(req, res) {
 
    // t_fahrenheit = .... TO BE COMPLETED
   
-   t_fahrenheit  = ;
+   t_fahrenheit  = 0;
 
    //
    //res.send('{"fahrenheit": '+ t_fahrenheit +'}');
