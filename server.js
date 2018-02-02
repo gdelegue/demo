@@ -6,6 +6,8 @@ var server_ip_address = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '
 var express = require('express');
 var app = express();
 
+var counter = 0;
+
 app.get('/temperature/:value', function(req, res) {
 
    console.log(req.params.value)
@@ -20,7 +22,9 @@ app.get('/temperature/:value', function(req, res) {
    t_fahrenheit  = ;
 
    //
-   res.send('{"fahrenheit": '+ t_fahrenheit +'}');
+   //res.send('{"fahrenheit": '+ t_fahrenheit +'}');
+   res.send('{"fahrenheit": ' + t_fahrenheit + ', "counter": ' + counter + '}' );
+   
 });
 
 app.listen(server_port, server_ip_address);
