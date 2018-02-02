@@ -11,7 +11,7 @@ var counter = 0;
 app.get('/temperature/:value', function(req, res) {
 
    console.log(req.params.value)
-
+   counter = counter  + 1;
    t_celsius = req.params.value;
 
    //  Celsius to Fahrenheit conversion
