@@ -18,7 +18,7 @@ app.get('/temperature/:value', function(req, res) {
    // T(F) = T(C) * 9 / 5.0 + 32  ;
 
    // t_fahrenheit = .... TO BE COMPLETED
-   t_fahrenheit  = 0  ;
+   t_fahrenheit  = t_celsius * 9.0 / 5.0 + 32  ;
 
    
    //
